@@ -1,14 +1,14 @@
-<img src="https://i.ibb.co/jTx1HDg/image.jpg" alt="banner">
-<h1 align="center"><img src="https://i.ibb.co/g97zhps/image.jpg" width="50px"> Goat Bot - Bot Chat Messenger</h1>
+<img src="https://i.ibb.co/SKzjm9M/image.jpg" alt="banner">
+<h1 align="center"><img src="https://i.ibb.co/9YfCBpV/image.jpg" width="50px"> 𝙎𝙊𝙉𝙄𝘾-𝘽𝙊𝙏 𝙈𝙀𝙎𝙎𝙀𝙉𝙂𝙀𝙍 </h1>
 
-<img src="https://i.ibb.co/ZhyYbWq/image.jpg" alt=banner">
+<img src="https://i.ibb.co/kMdfhwN/image.jpg" alt=banner">
 <h1 align="center"><img
 src="https://i.ibb.co/ZhyYbWq/image.jpg" width="50px"> compte du bot
 a voir sur facebook </h1> 
 
 <p align="center">
-<h1 🌱SONIC🍀🏂>
-<p>✨😷 ᴊᴇ ᴠᴏᴜꜱ ᴅᴏɴɴᴇ ʟ'ᴀᴜᴛᴏʀɪꜱᴀᴛɪᴏɴ ᴅᴇ ꜰᴏʀᴋᴇʀ ᴍᴏɴ ʙᴏᴛ ᴍᴀɪꜱ ꜱᴠᴩ ɴᴇ ᴄʜᴀɴɢᴇᴢ ᴩᴀꜱ ʟᴇꜱ ɴᴏᴍꜱ ᴅᴇꜱ ᴀᴜᴛᴇᴜʀꜱ ᴄ'ᴇꜱᴛ ᴀ ᴅɪʀᴇ ᴍᴏɪ ᴇᴛ ᴍᴇꜱ ᴄᴏʟʟᴀʙᴏʀᴀᴛᴇᴜʀꜱ </p>
+<h1 ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦>
+<p>🏁☘️ ᴊᴇ ᴠᴏᴜꜱ ᴅᴏɴɴᴇ ʟ'ᴀᴜᴛᴏʀɪꜱᴀᴛɪᴏɴ ᴅᴇ ꜰᴏʀᴋᴇʀ ᴍᴏɴ ʙᴏᴛ ᴍᴀɪꜱ ꜱᴠᴩ ɴᴇ ᴄʜᴀɴɢᴇᴢ ᴩᴀꜱ ʟᴇꜱ ɴᴏᴍꜱ ᴅᴇꜱ ᴀᴜᴛᴇᴜʀꜱ ᴄ'ᴇꜱᴛ ᴀ ᴅɪʀᴇ ᴍᴏɪ ᴇᴛ ᴍᴇꜱ ᴄᴏʟʟᴀʙᴏʀᴀᴛᴇᴜʀꜱ </p>
 
 <P> ᴩᴏᴜʀ ᴩʟᴜꜱ ᴅ'ɪɴꜰᴏꜱ ᴠᴏɪᴄɪ ᴍᴏɴ ʟɪᴇɴ ꜰᴀᴄᴇʙᴏᴏᴋ : https://www.facebook.com/profile.php?id=100090405019929 </p>
 
