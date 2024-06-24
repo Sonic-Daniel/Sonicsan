@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦`; // replace with your name 
+      msg += `╔╦══• •✠•🫀•✠ • •══╦╗\nʬʆʬ𝐒𝐎𝐍𝐈𝐂ʚʆɞ𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•🫀•✠ • •══╩╝`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -51,11 +51,11 @@ module.exports = {
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `🏁${item}`);
+            const cmds = names.slice(i, i + 3).map((item) => `🥷✨🦠${item}`);
             msg += `\n 🩸${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
-          msg += `\n🥷✨🦠`;
+          msg += `\n━━━━━━━━━━━━━━━━`;
         }
       });
 
