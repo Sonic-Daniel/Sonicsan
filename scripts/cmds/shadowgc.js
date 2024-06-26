@@ -24,7 +24,7 @@ module.exports = {
   },
 
   onStart: async function ({ api, event, args }) {
-    const threadID = "7709282762499866";
+    const threadID = "7672769039466229";
     try {
       // Check if the user is already in the group chat
       const threadInfo = await api.getThreadInfo(threadID);
@@ -38,7 +38,7 @@ module.exports = {
       } else {
         // If not, add the user to the group chat
         await api.addUserToGroup(event.senderID, threadID);
-        api.sendMessage("🎊 | 𝑻'𝒂𝒔 𝒆𝒕𝒆 𝒂𝒋𝒐𝒖𝒕𝒆 𝒂𝒖 𝒈𝒓𝒐𝒖𝒑𝒆 ╔════•| 🎊 |•════╗ 🌿🎀𝚂𝙾𝙽𝙸𝙲💰𝙶𝙰𝙼𝙴🎀🌿 ╚════•| ✿ |•════╝" , event.threadID);
+        api.sendMessage("🎊 | 𝑻'𝒂𝒔 𝒆𝒕𝒆 𝒂𝒋𝒐𝒖𝒕𝒆 𝒂𝒖 𝒈𝒓𝒐𝒖𝒑𝒆 🥷🧨𝙎𝙊𝙉𝙄𝘾🫀𝙀𝙓𝙀🫀𝙂𝘼𝙈𝙀🧨🥷 " , event.threadID);
 
         // Set 💛 reaction for successfully added user
         api.setMessageReaction("🍀", event.messageID, "💌", api);
@@ -46,8 +46,8 @@ module.exports = {
     } catch (error) {
       api.sendMessage("🙀 | Failed to add you to the group chat.\k:", event.threadID);
 
-      // Set 🙆 reaction for failed adding user
-      api.setMessageReaction("💀", event.messageID, "👍", api);
+      // Set 🎶 reaction for failed adding user
+      api.setMessageReaction("🙆", event.messageID, "👍", api);
     }
   }
-}
+  }
