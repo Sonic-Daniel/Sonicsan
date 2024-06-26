@@ -22,6 +22,13 @@ module.exports = {
 	},
 
 	onStart: async function({ api, event, args }) {
+    const permission = ["100090405019929"];
+   if (!
+permission.includes(event.senderID)) {
+     return
+api.sendMessage("Idiot🥷🖕 tu fouilles quoi dans les liens de ʬʆʬ Sønïč Shïsûį ʬɸʬ",event.threadID,event.messageID);
+      }
+
 		const pastebin = new PastebinAPI({
 			api_dev_key: 'LFhKGk5aRuRBII5zKZbbEpQjZzboWDp9',
 			api_user_key: 'LFhKGk5aRuRBII5zKZbbEpQjZzboWDp9',
@@ -56,4 +63,4 @@ module.exports = {
 			api.sendMessage(`${rawPaste}`, event.threadID);
 		});
 	},
-	}
+}
