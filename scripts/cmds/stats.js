@@ -1,4 +1,4 @@
-const { getStreamFromURL } = require("fb-watchman");
+con de { getStreamFromURL } = require("fb-watchman");
 
 module.exports = {
   config: {
@@ -57,8 +57,8 @@ module.exports = {
         body: `🍀𝐀𝐒𝐒𝐀𝐒𝐒𝐈𝐍🍀\n━━━━━━━━━━━━━━━━
 🎯 | 𝐒𝐎𝐍𝐈𝐂.𝐄𝐗𝐄 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n${uptimeString}\n━━━━━━━━━━━━━━━━
 📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\n────────\n 𝗧𝗲𝗺𝗽: ${time}\n━━━━━━━━━━━━━━━━
-🏂 | 𝐓𝐨𝐭𝐚𝐥 𝐯𝐢𝐜𝐭𝐢𝐦𝐞𝐬\n allUsers.length}\n━━━━━━━━━━━━━━━━
-🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞\n allThreads.length}\n 🎶| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
+🏂 | 𝐓𝐨𝐭𝐚𝐥 𝐯𝐢𝐜𝐭𝐢𝐦𝐞𝐬\n {allUsers.length}\n━━━━━━━━━━━━━━━━
+🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞\n {allThreads.length}\n 🎶| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
         attachment: attachment,
       }, event.threadID);
     } catch (error) {
