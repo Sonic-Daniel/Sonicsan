@@ -1,4 +1,4 @@
-con de { getStreamFromURL } = require("fb-watchman");
+{ getStreamFromURL } = require("fb-watchman");
 
 module.exports = {
   config: {
