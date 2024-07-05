@@ -1,4 +1,4 @@
-#cmd install ai.js module.exports = {
+module.exports = {
 	config: {
 		name: "ai",
 		aliases: ["ai"],
