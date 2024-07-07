@@ -73,10 +73,10 @@ const fonts = {
  },
  onChat: async function ({ event, message }) {
  const messageContent = event.body.trim().toLowerCase();
- if (messageContent.startsWith("sonic")) {
- const input = messageContent.replace(/^sonic\*/, "").trim();
+ if (messageContent.startsWith("hinata")) {
+ const input = messageContent.replace(/^hinata\*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`𝙎𝙊𝙉𝙄𝘾.𝙀𝙓𝙀....⚪\n━━━━━━━━━━━\n☘️${response}☘️`, messageID);
+ message.reply(`❤‍🩹𝐇𝐈𝐍𝐀𝐓𝐀 𝐇𝐘𝐔𝐆𝐀❤‍🩹\n━━━━━━━━━━━━━━\n 🥀${response}🥀`, messageID);
  }
  }
-  }
+ }
