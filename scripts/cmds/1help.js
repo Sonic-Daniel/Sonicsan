@@ -55,7 +55,7 @@ module.exports = {
             msg += `\n ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
-          msg += `━━━━━━━━━━━━━━━━`;
+          msg += `\n━━━━━━━━━━━━━━━━`;
         }
       });
 
