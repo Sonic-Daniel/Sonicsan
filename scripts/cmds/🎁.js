@@ -1,8 +1,8 @@
 module.exports = {
     config: {
-        name: "🥴",
+        name: "🎁",
         version: "1.0",
-        author: "ʬɸʬ Sønïč Shïsûį ʬɸʬ",
+        author: "ʬɸʬ Shïsûį Dånïęl ʬɸʬ",
         countDown: 5,
         role: 0,
         shortDescription: "sarcasm",
@@ -15,6 +15,6 @@ module.exports = {
         message,
         getLang
     }) {
-        if (event.body && event.body.toLowerCase() == "🥴") return message.reply("𝙅'𝙩𝙚 𝙥𝙧𝙤𝙢𝙚𝙩𝙨 𝙙𝙚 𝙩'𝙖𝙧𝙧𝙖𝙘𝙝𝙚𝙧 𝙡𝙚 𝙘𝙚𝙧𝙫𝙚𝙖𝙪 🥴");
+        if (event.body && event.body.toLowerCase() == "🎁") return message.reply("𝑂ℎℎℎ 😊 𝑐'𝑒𝑠𝑡 𝑝𝑜𝑢𝑟 𝑚𝑜𝑖 !? 𝐶'𝑒𝑠𝑡 𝑔𝑒𝑛𝑡𝑖𝑙 𝑑𝑒 𝑡𝑎 𝑝𝑎𝑟𝑡😇");
     }
 }
