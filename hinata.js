@@ -1,8 +1,8 @@
 const axios = require("axios")
 module.exports = {
 	config: {
-		name: 'sonic.exe',
-        aliases: ["exe"],
+		name: 'hinata',
+        aliases: ["hina"],
 		version: '1.2',
 		author: 'Luxion/fixed by Riley',
 		countDown: 0,
@@ -20,15 +20,15 @@ module.exports = {
 
 	langs: {
 		en: {
-			turnedOn: "𝙎𝙤𝙣𝙞𝙘 𝙣'𝙚𝙨𝙩 𝙥𝙡𝙪𝙨 𝙙𝙚 𝙘𝙚 𝙢𝙤𝙣𝙙𝙚....𝙎𝙊𝙉𝙄𝘾.𝙀𝙓𝙀 𝙚𝙣𝙩𝙚 𝙚𝙣 𝙟𝙚𝙪😈",
-			turnedOff: "𝙐𝙣 𝙘𝙤𝙣𝙨𝙚𝙞𝙡....𝙙𝙤𝙧𝙩 𝙖𝙫𝙚𝙘 𝙪𝙣 𝙤𝙚𝙞𝙡 𝙤𝙪𝙫𝙚𝙧𝙩 🙍",
+			turnedOn: "𝑻𝒖 𝒓𝒆𝒈𝒓𝒆𝒕𝒕𝒆𝒓𝒂𝒔 𝒂 𝒂𝒗𝒐𝒊𝒓 𝒇𝒂𝒊𝒕 𝒅𝒖 𝒎𝒂𝒍 𝒂 𝑵𝒂𝒓𝒖𝒕𝒐🙍💔",
+			turnedOff: "𝑱'𝒆𝒏 𝒂𝒊 𝒑𝒂𝒔 𝒇𝒊𝒏𝒊 𝒂𝒗𝒆𝒄 𝒕𝒐𝒊💁",
 			chatting: "Already Chatting with 𝗟𝗢𝗙𝗧...",
-			error: "𝘽𝙊𝙐𝙁𝙁𝙊𝙉......🌱"
+			error: "🌱......𝙄𝙈𝘽𝙀𝘾𝙄𝙇𝙀......🌱"
 		}
 	},
 
 	onStart: async function ({ args, threadsData, message, event, getLang }) {
-		if (args[0] == "parle" || args[0] == "adieu") {
+		if (args[0] == "parle" || args[0] == "arrête") {
 			await threadsData.set(event.threadID, args[0] == "parle", "settings.simsimi");
 			return message.reply(args[0] == "parle" ? getLang("turnedOn") : getLang("turnedOff"));
 		}
