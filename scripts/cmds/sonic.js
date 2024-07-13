@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   config: {
     name: "sonic",
-    aliases: ["shadow"],
+    aliases: ["hyuga"],
     author: " Aesther ", 
     version: "2.0",
     cooldowns: 5,
@@ -36,18 +36,9 @@ module.exports = {
         };
 
         const videoUrl = 
-["https://i.imgur.com/ZpgBKGA.mp4",
-"https://i.imgur.com/h6J9tkb.mp4",
-"https://i.imgur.com/RmMI3dC.mp4",
-"https://i.imgur.com/jeyjWuk.mp4",
-"https://i.imgur.com/HIWaV6d.mp4",
-"https://i.imgur.com/BXmgByZ.mp4",
-"https://i.imgur.com/wuo18rR.mp4",
-"https://i.imgur.com/C4neV9i.mp4",
-"https://i.imgur.com/pdr6e4T.mp4",
-"https://i.imgur.com/OAmV2Wr.mp4",
-"https://i.imgur.com/gPl8sV2.mp4",
-"https://i.imgur.com/nU8Gsyn.mp4",];
+["https://i.imgur.com/cUlB0A3.mp4",
+"https://i.imgur.com/auAEjWw.mp4",]     
+          
         const tmpFolderPath = path.join(__dirname, 'tmp');
 
         if (!fs.existsSync(tmpFolderPath)) {
