@@ -1,9 +1,9 @@
-   const { getStreamFromURL } = require("fb-watchman");
+const { getStreamFromURL } = require("fb-watchman");
 
 module.exports = {
   config: {
-    name: "stats",
-    aliases: ["ping","upt","time"],
+    name: "uptime",
+    aliases: ["upt","time"],
     version: "1.0",
     author: "OtinXSandip",
     role: 0,
@@ -24,12 +24,13 @@ module.exports = {
       const allUsers = await usersData.getAll();
       const allThreads = await threadsData.getAll();
       const uptime = process.uptime();
-
-      const hours = Math.floor(uptime / 3600);
+     const days = 
+Math.floor(uptime / 86400);
+      const hours = Math.floor((uptime % 86400) / 3600);
       const minutes = Math.floor((uptime % 3600) / 60);
       const seconds = Math.floor(uptime % 60);
 
-      const uptimeString = `${hours}Hrs ${minutes}min ${seconds}sec`;
+      const uptimeString = `${days}days ${hours}hrs ${minutes}min ${seconds}sec`;
 
       const currentDate = new Date();
       const options = { year: "numeric", month: "numeric", day: "numeric" };
@@ -41,7 +42,7 @@ module.exports = {
 
       const timeStart = Date.now();
       await api.sendMessage({
-        body: "👻✨𝚂𝙾𝙽𝙸𝙲.𝙴𝚇𝙴✨👻",
+        body: "❤🌱𝙃𝙄𝙉𝘼𝙏𝘼 𝙎𝘼𝙉 𝙐𝙕𝙐𝙈𝘼𝙆𝙄🌱❤",
       }, event.threadID);
 
       const ping = Date.now() - timeStart;
@@ -52,13 +53,13 @@ module.exports = {
       }
 
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
-      const imgURL= "https://i.imgur.com/9Qx4mgn.jpeg";
+      const imgURL= "https://i.imgur.com/BBB4l52.jpeg";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
-        body: `🍀𝐀𝐒𝐒𝐀𝐒𝐒𝐈𝐍🍀\n━━━━━━━━━━━━━━━━
-🎯 | 𝐒𝐎𝐍𝐈𝐂.𝐄𝐗𝐄 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n${uptimeString}\n━━━━━━━━━━━━━━━━
-📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\n────────\n 𝗧𝗲𝗺𝗽: ${time}\n━━━━━━━━━━━━━━━━
+        body: `♣♦𝐍𝐈𝐍𝐉𝐀 𝐃𝐄 𝐊𝐎𝐍𝐎𝐇𝐀♦♣\n━━━━━━━━━━━━━━━━
+🎯 | 𝐇𝐈𝐍𝐀𝐓𝐀 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n ♥${uptimeString}♥\n━━━━━━━━━━━━━━━━
+📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\n━━━━━━━━━━━━━━━━\n   𝗧𝗲𝗺𝗽: ${time}\n━━━━━━━━━━━━━━━━
 🏂 | 𝐓𝐨𝐭𝐚𝐥 𝐯𝐢𝐜𝐭𝐢𝐦𝐞𝐬: ${allUsers.length}\n━━━━━━━━━━━━━━━━
-🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n 🎶| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
+🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n━━━━━━━━━━━━━━━━\n 🎶| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
         attachment: attachment,
       }, event.threadID);
     } catch (error) {
@@ -66,4 +67,4 @@ module.exports = {
       api.sendMessage("An error occurred while retrieving data.", event.threadID);
     }
   }
-}
+}      
