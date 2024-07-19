@@ -7,7 +7,7 @@ module.exports = {
     
 
 		countDown: 5,
-		role: 2,
+		role: 0,
 		shortDescription: "developer only dear",
 		longDescription: "",
 		category: "18+",
