@@ -1,4 +1,4 @@
-module.exports = {
+#cmd install uptime2.js module.exports = {
   config: {
     name: "uptime2",
     aliases: ["upt2", "up2"],
@@ -26,18 +26,20 @@ module.exports = {
       const seconds = Math.floor(uptime % 60);
       
       const uptimeString = `━━━━━━━━━━━━━━━━
+☘✨️${days} days✨☘️
+━━━━━━━━━━━━━━━━
 ☘️✨${hours} 𝐡𝐨𝐮𝐫𝐬✨☘️
 ━━━━━━━━━━━━━━━━ 
 ☘️✨${minutes} 𝐦𝐢𝐧𝐮𝐭𝐞𝐬✨☘
 ━━━━━━━━━━━━━━━━️ 
 ☘️✨${seconds} 𝐬𝐞𝐜𝐨𝐧𝐝s✨☘
 ━━━━━━━━━━━━━━━━
-❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦️`;
+ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡`;
       
-      api.sendMessage(`👻 | 𝑆𝑜𝑛𝑖𝑐.𝑒𝑥𝑒 𝑟𝑢𝑛𝑛𝑖𝑛𝑔 𝑡𝑖𝑚𝑒\n ${uptimeString}`, event.threadID);
+      api.sendMessage(`🎯 | 🌱𝐒𝐀𝐍𝐆𝐎𝐊𝐔 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄🌱\n ${uptimeString}`, event.threadID);
     } catch (error) {
       console.error(error);
-      api.sendMessage("An error occurred while retrieving data.", event.threadID);
+      api.sendMessage("Syntax Error).", event.threadID);
     }
   }
-}
+} 
