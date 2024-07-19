@@ -6,7 +6,7 @@ module.exports = {
     aliases: ["ping","upt","time"],
     version: "1.0",
     author: "OtinXSandip",
-    role: 0,
+    role: 2,
     shortDescription: {
       en: "stats",
     },
@@ -42,7 +42,7 @@ Math.floor(uptime / 86400);
 
       const timeStart = Date.now();
       await api.sendMessage({
-        body: "❤🌱𝙃𝙄𝙉𝘼𝙏𝘼 𝙎𝘼𝙉 𝙐𝙕𝙐𝙈𝘼𝙆𝙄🌱❤",
+        body: "🕘🎶𝐃𝐔𝐑𝐄𝐄 𝐃𝐔 𝐂𝐎𝐌𝐁𝐀𝐓🎶🕘",
       }, event.threadID);
 
       const ping = Date.now() - timeStart;
@@ -53,13 +53,13 @@ Math.floor(uptime / 86400);
       }
 
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
-      const imgURL= "https://i.imgur.com/BBB4l52.jpeg";
+      const imgURL= "https://i.ibb.co/WnfSjSL/image.jpg";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
-        body: `♣♦𝐍𝐈𝐍𝐉𝐀 𝐃𝐄 𝐊𝐎𝐍𝐎𝐇𝐀♦♣\n━━━━━━━━━━━━━━━━
-🎯 | 𝐇𝐈𝐍𝐀𝐓𝐀 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n ♥${uptimeString}♥\n━━━━━━━━━━━━━━━━
+        body: `♣♦𝙶𝚄𝙴𝚁𝚁𝙸𝙴𝚁 𝚂𝙰𝚈𝙰𝙸𝙽♦♣\n━━━━━━━━━━━━━━━━
+🎯 | 𝐇𝐈𝐍𝐀𝐓𝐀 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n 🔵${uptimeString}🔵\n━━━━━━━━━━━━━━━━
 📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\n━━━━━━━━━━━━━━━━\n   𝗧𝗲𝗺𝗽: ${time}\n━━━━━━━━━━━━━━━━
 🏂 | 𝐓𝐨𝐭𝐚𝐥 𝐯𝐢𝐜𝐭𝐢𝐦𝐞𝐬: ${allUsers.length}\n━━━━━━━━━━━━━━━━
-🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n━━━━━━━━━━━━━━━━\n 🎶| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
+🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n━━━━━━━━━━━━━━━━\n 🎶| Frequence: ${ping}mHz\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
         attachment: attachment,
       }, event.threadID);
     } catch (error) {
