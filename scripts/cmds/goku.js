@@ -1,8 +1,8 @@
 const axios = require("axios")
 module.exports = {
 	config: {
-		name: 'hinata',
-        aliases: ["hina"],
+		name: 'goku',
+        aliases: ["kakarot"],
 		version: '1.2',
 		author: 'Luxion/fixed by Riley',
 		countDown: 0,
@@ -20,7 +20,7 @@ module.exports = {
 
 	langs: {
 		en: {
-			turnedOn: "𝑻𝒖 𝒓𝒆𝒈𝒓𝒆𝒕𝒕𝒆𝒓𝒂𝒔 𝒂 𝒂𝒗𝒐𝒊𝒓 𝒇𝒂𝒊𝒕 𝒅𝒖 𝒎𝒂𝒍 𝒂 𝑵𝒂𝒓𝒖𝒕𝒐🙍💔",
+			turnedOn: "𝐉'𝐦𝐞 𝐛𝐚𝐭𝐭𝐫𝐚𝐢𝐭 𝐜𝐨𝐮𝐭𝐞 𝐪𝐮𝐞 𝐜𝐨𝐮𝐭𝐞 𝐩𝐨𝐮𝐫 𝐬𝐚𝐮𝐯𝐞𝐫 𝐥𝐞 𝐦𝐨𝐧𝐝𝐞 !🎯🙍",
 			turnedOff: "𝑱'𝒆𝒏 𝒂𝒊 𝒑𝒂𝒔 𝒇𝒊𝒏𝒊 𝒂𝒗𝒆𝒄 𝒕𝒐𝒊💁",
 			chatting: "Already Chatting with 𝗟𝗢𝗙𝗧...",
 			error: "🌱......𝙄𝙈𝘽𝙀𝘾𝙄𝙇𝙀......🌱"
