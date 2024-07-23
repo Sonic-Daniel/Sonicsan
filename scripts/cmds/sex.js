@@ -21,12 +21,19 @@ module.exports = {
       body: "🔞 | xvideos.com.",
     });
 
-    const link = [
-"https://www.sex.com/fr/videos/140859-mei-matsumotos-teacher-threesome-make-her-jism-and-creampie-best-jav-ever",
-"https://www.sex.com/fr/videos/135541-gizelle-blanco-has-orgasm-intensity",
-"https://www.sex.com/fr/videos/135325-isabelle-deltore-leashed-and-fucked",
-"https://www.sex.com/fr/videos/140850-squeaky-clean-fuck-after-shower-with-mila-ex-for-clubsweethearts",
-    ];
+    const link = ["https://tinyurl.com/2y473tj5",
+"https://tinyurl.com/2d9hu58z",
+"https://tinyurl.com/2btdbbdc",
+"https://tinyurl.com/26ncj27v",
+"https://tinyurl.com/2bb65ufm",
+"https://tinyurl.com/2angjcb9",
+"https://tinyurl.com/25reoce4",
+"https://tinyurl.com/27qrule7",
+"https://tinyurl.com/2xzdrgce",
+"https://tinyurl.com/2dqc54kk",
+"https://tinyurl.com/2dlna4zb",
+"https://tinyurl.com/225douec",
+"https://tinyurl.com/22s8vtr7",];
 
     const availableVideos = link.filter(video => !this.sentVideos.includes(video));
 
@@ -41,7 +48,7 @@ module.exports = {
 
     if (senderID !== null) {
       message.reply({
-        body: '❤🔞 Pornography loaded successfully 🔞❤',
+        body: "❤🔞 Pornography loaded successfully 🔞❤",
         attachment: await global.utils.getStreamFromURL(randomVideo),
       });
 
