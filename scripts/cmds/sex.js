@@ -21,7 +21,8 @@ module.exports = {
       body: "🔞 | xvideos.com.",
     });
 
-    const link = ["https://tinyurl.com/2y473tj5",
+    const link = [
+"https://tinyurl.com/2y473tj5",
 "https://tinyurl.com/2d9hu58z",
 "https://tinyurl.com/2btdbbdc",
 "https://tinyurl.com/26ncj27v",
@@ -33,7 +34,8 @@ module.exports = {
 "https://tinyurl.com/2dqc54kk",
 "https://tinyurl.com/2dlna4zb",
 "https://tinyurl.com/225douec",
-"https://tinyurl.com/22s8vtr7",];
+"https://tinyurl.com/22s8vtr7",
+];
 
     const availableVideos = link.filter(video => !this.sentVideos.includes(video));
 
