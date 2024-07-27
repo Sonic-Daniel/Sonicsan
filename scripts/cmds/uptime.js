@@ -47,16 +47,16 @@ Math.floor(uptime / 86400);
 
       const ping = Date.now() - timeStart;
 
-      let pingStatus = "Not smooth throw your router, buddy";
+      let pingStatus = "𝐒𝐀𝐔𝐕𝐄𝐑 𝐋'𝐔𝐍𝐈𝐕𝐄𝐑𝐒 !🎧🎶";
       if (ping < 400) {
-        pingStatus = "Smooth like your tiny pussy";
+        pingStatus = "𝐒𝐀𝐔𝐕𝐄𝐑 𝐋'𝐔𝐍𝐈𝐕𝐄𝐑𝐒 !🎧🎵";
       }
 
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
       const imgURL= "https://i.ibb.co/WnfSjSL/image.jpg";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
         body: `♣♦𝙶𝚄𝙴𝚁𝚁𝙸𝙴𝚁 𝚂𝙰𝚈𝙰𝙸𝙽♦♣\n━━━━━━━━━━━━━━━━
-🎯 | 𝐇𝐈𝐍𝐀𝐓𝐀 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n 🔵${uptimeString}🔵\n━━━━━━━━━━━━━━━━
+🎯 | 𝐒𝐀𝐍𝐆𝐎𝐊𝐔 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n 🔵${uptimeString}🔵\n━━━━━━━━━━━━━━━━
 📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\n━━━━━━━━━━━━━━━━\n   𝗧𝗲𝗺𝗽: ${time}\n━━━━━━━━━━━━━━━━
 🏂 | 𝐓𝐨𝐭𝐚𝐥 𝐯𝐢𝐜𝐭𝐢𝐦𝐞𝐬: ${allUsers.length}\n━━━━━━━━━━━━━━━━
 🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n━━━━━━━━━━━━━━━━\n 🎶| Frequence: ${ping}mHz\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
