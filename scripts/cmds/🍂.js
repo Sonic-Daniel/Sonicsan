@@ -1,9 +1,9 @@
 module.exports = {
     config: {
-        name: "❤️",
+        name: "🍂",
         version: "1.0",
         author: "ʬʆʬ Sønïč Shïsûį ʬɸʬ", // do not change this credits
-        countDown: 2,
+        countDown: 5,
         role: 0,
         shortDescription: "No Prefix",
         longDescription: "No Prefix",
@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "❤️") return message.reply("ʬʆʬ Sønïč Shïsûį ʬɸʬ 😊❤ 𝐣𝐞 𝐭'𝐚𝐢𝐦𝐞 𝐭𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭");
+    if (event.body && event.body.toLowerCase() == "🍂") return message.reply("Ce n’est pas parce que tu es fort que tu pourras gagner⚪🍂🏁. Ce n’est pas parce que tu ne seras pas fort que tu perdras🐝🎶☘️");
 }
 };
