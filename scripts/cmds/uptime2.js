@@ -36,7 +36,7 @@ module.exports = {
 ━━━━━━━━━━━━━━━━
 ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡`;
       
-      api.sendMessage(`🎯 | 🌱𝐒𝐀𝐍𝐆𝐎𝐊𝐔 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄🌱\n ${uptimeString}`, event.threadID);
+      api.sendMessage(`🎯 | 🌱𝐒𝐇𝐈𝐒𝐔𝐈 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄🌱\n ${uptimeString}`, event.threadID);
     } catch (error) {
       console.error(error);
       api.sendMessage("Syntax Error).", event.threadID);
