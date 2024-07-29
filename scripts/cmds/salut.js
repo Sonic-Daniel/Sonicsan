@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝐒𝐚𝐥𝐮𝐭𝐚𝐭𝐢𝐨𝐧𝐬....𝐭𝐞𝐫𝐫𝐢𝐞𝐧🙂👋𝐦𝐨𝐢 𝐜'𝐞𝐬𝐭 𝐒𝐚𝐧𝐠𝐨𝐤𝐮....𝐂𝐨𝐦𝐦𝐞𝐧𝐭 𝐜𝐚 𝐯𝐚 !?🎧🎶");
+    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝐒𝐚𝐥𝐮𝐭 𝐯𝐢𝐞𝐮𝐱🍂💜🏁 𝐪𝐮'𝐞𝐬𝐭 𝐜'𝐪𝐮𝐞 𝐭𝐮 𝐟𝐚𝐢𝐬 𝐝𝐚𝐧𝐬 𝐥'𝐜𝐨𝐢𝐧!?🎧🎶");
 }
 };
