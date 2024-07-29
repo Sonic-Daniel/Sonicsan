@@ -47,19 +47,19 @@ Math.floor(uptime / 86400);
 
       const ping = Date.now() - timeStart;
 
-      let pingStatus = "𝐒𝐀𝐔𝐕𝐄𝐑 𝐋'𝐔𝐍𝐈𝐕𝐄𝐑𝐒 !🎧🎶";
+      let pingStatus = "𝐒𝐀𝐔𝐕𝐄𝐑 𝐊𝐎𝐍𝐎𝐇𝐀 !🎧🎶";
       if (ping < 400) {
-        pingStatus = "𝐒𝐀𝐔𝐕𝐄𝐑 𝐋'𝐔𝐍𝐈𝐕𝐄𝐑𝐒 !🎧🎵";
+        pingStatus = "𝐏𝐑𝐎𝐓𝐄𝐆𝐄𝐑 𝐊𝐎𝐍𝐎𝐇𝐀 !🎧🎵";
       }
 
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
-      const imgURL= "https://i.ibb.co/WnfSjSL/image.jpg";
+      const imgURL= "https://tinyurl.com/2a9rszbt";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
-        body: `♣♦𝙶𝚄𝙴𝚁𝚁𝙸𝙴𝚁 𝚂𝙰𝚈𝙰𝙸𝙽♦♣\n━━━━━━━━━━━━━━━━
-🎯 | 𝐒𝐀𝐍𝐆𝐎𝐊𝐔 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n 🔵${uptimeString}🔵\n━━━━━━━━━━━━━━━━
+        body: `♣♦𝙐𝘾𝙃𝙄𝙒𝘼🎧𝘾𝙇𝘼𝙉♦♣\n━━━━━━━━━━━━━━━━
+🎯 | 𝐒𝐇𝐈𝐒𝐔𝐈 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n 🔵${uptimeString}🔵\n━━━━━━━━━━━━━━━━
 📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\n━━━━━━━━━━━━━━━━\n   𝗧𝗲𝗺𝗽: ${time}\n━━━━━━━━━━━━━━━━
 🏂 | 𝐓𝐨𝐭𝐚𝐥 𝐯𝐢𝐜𝐭𝐢𝐦𝐞𝐬: ${allUsers.length}\n━━━━━━━━━━━━━━━━
-🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n━━━━━━━━━━━━━━━━\n 🎶| Frequence: ${ping}mHz\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
+🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞: ${allThreads.length}\n━━━━━━━━━━━━━━━━\n 🎶| Frequence: ${ping}Hz\n━━━━━━━━━━━━━━━━\n status: ${pingStatus}`,
         attachment: attachment,
       }, event.threadID);
     } catch (error) {
