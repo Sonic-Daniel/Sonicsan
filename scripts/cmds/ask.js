@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
  { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
  ];
 
- let response = "ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡\n━━━━━━━━━━━━━━━━\n𝐔𝐧 𝑝𝑟𝑜𝑏𝑙𝑒𝑚𝑒.....?🕒";
+ let response = "웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n━━━━━━━━━━━━━━━━\n𝐔𝐧 𝑝𝑟𝑜𝑏𝑙𝑒𝑚𝑒.....?!!🕒";
  let currentIndex = 0;
 
  for (let i = 0; i < services.length; i++) {
@@ -73,10 +73,10 @@ const fonts = {
  },
  onChat: async function ({ event, message }) {
  const messageContent = event.body.trim().toLowerCase();
- if (messageContent.startsWith("Sangoku")) {
- const input = messageContent.replace(/^Sangoku\*/, "").trim();
+ if (messageContent.startsWith("shisui")) {
+ const input = messageContent.replace(/^shisui\*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡\n━━━━━━━━━━━━━━\n🏁${response}🏁`, messageID);
+ message.reply(`웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n━━━━━━━━━━━━━━\n🏁${response}🏁`, messageID);
  }
  }
 }
