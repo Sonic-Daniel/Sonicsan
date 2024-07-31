@@ -57,6 +57,7 @@ module.exports = {
 			await threadsData.set(event.threadID, null, "data.prefix");
 			return message.reply(getLang("reset", global.GoatBot.config.prefix));
 		}
+	{
   const helpListImages = [
         "https://i.ibb.co/HgN9N8H/image.jpg",
         "https://i.ibb.co/BVqHC54/image.jpg",
@@ -66,6 +67,8 @@ module.exports = {
       ];
 
       const helpListImage = helpListImages[Math.floor(Math.random() * helpListImages.length)];
+	}
+
 		const newPrefix = args[0];
 		const formSet = {
 			commandName,
