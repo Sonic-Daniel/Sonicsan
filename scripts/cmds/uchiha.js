@@ -3,8 +3,8 @@ const moment = require('moment-timezone');
 
 module.exports = {
   config: {
-    name: "kakarot",
-    aliases: ["goku"],
+    name: "uchiha",
+    aliases: ["ucha"],
     version: "1.0",
     author: "AceGun",
     countDown: 5,
@@ -19,7 +19,7 @@ module.exports = {
     },
     category: "GroupMsg",
     guide: {
-      en: "{pn} goku"
+      en: "{pn} uchiha"
     }
   },
 
@@ -38,7 +38,7 @@ module.exports = {
       } else {
         // If not, add the user to the group chat
         await api.addUserToGroup(event.senderID, threadID);
-        api.sendMessage("🎊 | 𝑻'𝒂𝒔 𝒆𝒕𝒆 𝒂𝒋𝒐𝒖𝒕𝒆 𝒂𝒖 𝒈𝒓𝒐𝒖𝒑𝒆 ☠️✨웃『𝐆𝐎𝐊𝐔🤍𝙂𝘾 』ヅ✨☠️", event.threadID);
+        api.sendMessage("🎊 | 𝑻'𝒂𝒔 𝒆𝒕𝒆 𝒂𝒋𝒐𝒖𝒕𝒆 𝒂𝒖 𝒈𝒓𝒐𝒖𝒑𝒆 ☠️✨웃『𝙎𝙃𝙄𝙎𝙐𝙄🤍𝙂𝘾』ヅ✨☠️", event.threadID);
 
         // Set 💛 reaction for successfully added user
         api.setMessageReaction("🍀", event.messageID, "💌", api);
