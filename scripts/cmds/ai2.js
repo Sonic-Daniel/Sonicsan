@@ -28,7 +28,7 @@ async function handleCommand(api, event, args, message) {
 
 
 
-        api.sendMessage(`ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡\n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+        api.sendMessage(`웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n══════ •『🧡』• ══════\n${response}\n══════ •『🧡』• ══════`, event.threadID, messageID);
 
     } catch (error) {
 
@@ -162,7 +162,7 @@ module.exports = {
 
             lastResponseMessageID = messageID;
 
-            api.sendMessage(`❤‍🩹𝐇𝐈𝐍𝐀𝐓𝐀 𝐇𝐘𝐔𝐆𝐀❤‍🩹\n━━━━━━━━━━━━━━━━\n 🌱${response}🌱\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+            api.sendMessage(`웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n══════ •『🖤』• ══════\n🌱${response}🌱\n══════ •『🖤』• ══════`, event.threadID, messageID);
 
         } catch (error) {
 
@@ -192,13 +192,13 @@ module.exports = {
 
                 lastResponseMessageID = messageID;
 
-                api.sendMessage(`ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡\n━━━━━━━━━━━━━━━━\n 🍂${response}🍂\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+                api.sendMessage(`웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n══════ •『🧡』• ══════\n 🍂${response}🍂\n══════ •『🖤』• ══════`, event.threadID, messageID);
 
             } catch (error) {
 
                 console.error("Error in onChat:", error.message);
 
-                api.sendMessage("ミ★𝐆𝐎𝐊𝐔✄𝐊𝐀𝐊𝐀𝐑𝐎𝐓★彡", event.threadID);
+                api.sendMessage("웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n══════ •『💙』• ══════\n!!! 👾Moi qui pensait que t'étais intelligent👾 !!!", event.threadID);
 
             }
 
