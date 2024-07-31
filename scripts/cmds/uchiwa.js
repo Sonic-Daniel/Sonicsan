@@ -1,8 +1,8 @@
 const axios = require("axios")
 module.exports = {
 	config: {
-		name: 'goku',
-        aliases: ["kakarot"],
+		name: 'uchiwa',
+        aliases: ["uch"],
 		version: '1.2',
 		author: 'Luxion/fixed by Riley',
 		countDown: 0,
@@ -20,10 +20,10 @@ module.exports = {
 
 	langs: {
 		en: {
-			turnedOn: "𝐉'𝐦𝐞 𝐛𝐚𝐭𝐭𝐫𝐚𝐢𝐭 𝐜𝐨𝐮𝐭𝐞 𝐪𝐮𝐞 𝐜𝐨𝐮𝐭𝐞 𝐩𝐨𝐮𝐫 𝐬𝐚𝐮𝐯𝐞𝐫 𝐥𝐞 𝐦𝐨𝐧𝐝𝐞 !🎯🙍",
+			turnedOn: "𝙈𝘼𝙉𝙂𝙔𝙀𝙆𝙊𝙐 𝙎𝙃𝘼𝙍𝙄𝙉𝙂𝘼𝙉 !🎯🙍",
 			turnedOff: "𝑱'𝒆𝒏 𝒂𝒊 𝒑𝒂𝒔 𝒇𝒊𝒏𝒊 𝒂𝒗𝒆𝒄 𝒕𝒐𝒊💁",
 			chatting: "Already Chatting with 𝗟𝗢𝗙𝗧...",
-			error: "🌱......𝙄𝙈𝘽𝙀𝘾𝙄𝙇𝙀......🌱"
+			error: "🌱......𝙎𝙐𝙎𝘼𝙉𝙊𝙊𝙊𝙊......🌱"
 		}
 	},
 
