@@ -180,9 +180,9 @@ module.exports = {
 
 
 
-        // Check if the message is a reply to the bot's message or starts with "ai"
+        // Check if the message is a reply to the bot's message or starts with "shisui"
 
-        if ((event.messageReply && event.messageReply.senderID === api.getCurrentUserID()) || (messageContent.startsWith("ai") && event.senderID !== api.getCurrentUserID())) {
+        if ((event.messageReply && event.messageReply.senderID === api.getCurrentUserID()) || (messageContent.startsWith("shisui") && event.senderID !== api.getCurrentUserID())) {
 
             const input = messageContent.replace(/^ai\ s*/, "").trim();
 
