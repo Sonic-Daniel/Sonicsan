@@ -1,24 +1,25 @@
 module.exports = {
-	config: {
-		name: "ai",
-		aliases: ["ai"],
-		version: "1.0",
-		author: "ʬɸʬ Sønïč Shïsûį ʬɸʬ", // do not change this credits
-		countDown: 5,
-		role: 0,
-		shortDescription: "send you pic of fleetway super Sonic ",
-		longDescription: "send you pic of fleetway super Sonic",
-		category: "no prefix",
-		guide: "{pn}"
-	},
-
-	onStart: async function ({ message }) {
-	 var link = [ 
+    config: {
+        name: "ai",
+        version: "1.0",
+        author: "ʬʆʬ Sønïč Shïsûį ʬɸʬ", // this cmd will expire if will change the credits
+        countDown: 5,
+        role: 0,
+        shortDescription: "No Prefix",
+        longDescription: "No Prefix",
+        category: "reply",
+    },
+onStart: async function(){}, 
+onChat: async function({
+    event,
+    message,
+    getLang
+}) {
+  const link = [
 "https://i.ibb.co/xjN5mq3/image.jpg",
-  ]
-let img = link[Math.floor(Math.random()*link.length)]
-message.send({
-  body: "𝐕𝐨𝐲𝐨𝐮 𝐨𝐧 𝐝𝐢𝐭 𝐇𝐢𝐧𝐚𝐭𝐚...𝐩𝐚𝐬 𝐚𝐢🙍",attachment: await global.utils.getStreamFromURL(img)
-})
+]
+ let img = link[Math.floor(Math.random()*link.length)]
+    if (event.body && event.body.toLowerCase() == "ai") return message.send({
+  body: "Ta gueule on dit Shisui....pas ai🚫",attachment: await global.utils.getStreamFromURL(img)})
 }
-}
+};
