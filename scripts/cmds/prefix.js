@@ -7,7 +7,7 @@ module.exports = {
 	 role: 0,
 	 shortDescription: "no prefix",
 	 longDescription: "no prefix",
-	 category: "auto 🪐",
+	 category: "system",
  },
 
  onStart: async function(){}, 
