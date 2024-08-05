@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "━━━━━━━━━━━━━━━━\n╔╦══• •✠•☘️•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂ʚʆɞ𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•☘️•✠ • •══╩╝"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "━━━━━━━━━━━━━━━━\n╔╦══• •✠•☘•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂ʚʆɞ𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•☘•✠ • •══╩╝"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔╦══• •✠•☘️•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂 ʚʆɞ 𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•☘️•✠ • •══╩╝\n━━━━━━━━━━━━━━━━`; // replace with your name 
+      msg += `╔╦══• •✠•☘•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂 ʚʆɞ 𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•☘•✠ • •══╩╝\n━━━━━━━━━━━━━━━━`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -62,14 +62,14 @@ module.exports = {
       const totalCommands = commands.size;
       msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 🏁${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀🏁 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
       msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `\n╭───── • 🔵 • ─────╮\n   웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n╰───── • 🔵 • ─────╯`; // its not decoy so change it if you want 
+      msg += `\n╭───── • 🔵 • ──────╮\n   웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n╰───── • 🔵 • ─────╯`; // its not decoy so change it if you want 
 
       const helpListImages = [
-        "https://tinyurl.com/22n7wc6z", // add image link here
-        "https://tinyurl.com/22pmej8a",
-        "https://tinyurl.com/26ydror2",
-        "https://tinyurl.com/25o3e54d",
-        "https://tinyurl.com/22dc7v9q",
+        "https://tinyurl.com/27lldnwf", // add image link here
+        "https://tinyurl.com/2yxokypt",
+        "https://tinyurl.com/2chpu8hn",
+        "https://tinyurl.com/2d76p34a",
+        "https://tinyurl.com/2dmdw9qh",
         // Add more image links as needed
       ];
 
@@ -96,20 +96,20 @@ module.exports = {
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
         const response = `❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
-  ❍⌇─➭  ${configCommand.name}
-  ❍⌇─➭  𝙄𝙉𝙁𝙊
-  ❍⌇─➭  𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: ${longDescription}
-  ❍⌇─➭  𝙊𝙩𝙝𝙚𝙧 𝙣𝙖𝙢𝙚𝙨: ${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}
-  ❍⌇─➭  𝙊𝙩𝙝𝙚𝙧 𝙣𝙖𝙢𝙚𝙨 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥: 𝘿𝙤 𝙣𝙤𝙩 𝙝𝙖𝙫𝙚
-  ❍⌇─➭  𝙑𝙚𝙧𝙨𝙞𝙤𝙣: ${configCommand.version || "1.0"}
-  ❍⌇─➭  𝙍𝙤𝙡𝙚: ${roleText}
-  ❍⌇─➭  𝙏𝙞𝙢𝙚 𝙥𝙚𝙧 𝙘𝙤𝙢𝙢𝙖𝙣𝙙: ${configCommand.countDown || 1}s
-  ❍⌇─➭  𝘼𝙪𝙩𝙝𝙤𝙧: ${author}
-  ❍⌇─➭  𝙐𝙨𝙖𝙜𝙚
-  ❍⌇─➭  ${usage}
-  ❍⌇─➭  𝙉𝙤𝙩𝙚𝙨
-  ❍⌇─➭  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 <𝙓𝙓𝙓𝙓𝙓> 𝙘𝙖𝙣 𝙗𝙚 𝙘𝙝𝙖𝙣𝙜𝙚𝙙
-  ❍⌇─➭  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 [𝙖|𝙗|𝙘] 𝙞𝙨 𝙖 𝙤𝙧 𝙗 𝙤𝙧 𝙘 \n━━━━━━━━━━━━━━━━\n 🏁 𝙚𝙙𝙞𝙩𝙚 𝙗𝙮 : ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
+  웃=➪  『${configCommand.name}』
+  웃=➪ 𝙄𝙉𝙁𝙊
+  웃=➪  𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: 『${longDescription}』
+  웃=➪ 𝙊𝙩𝙝𝙚𝙧 𝙣𝙖𝙢𝙚𝙨: 『${configCommand.aliases ? configCommand.aliases.join(", ") : "Do not have"}』
+  웃=➪  𝙊𝙩𝙝𝙚𝙧 𝙣𝙖𝙢𝙚𝙨 𝙞𝙣 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥: 𝘿𝙤 𝙣𝙤𝙩 𝙝𝙖𝙫𝙚
+  웃=➪ 𝙑𝙚𝙧𝙨𝙞𝙤𝙣: 『${configCommand.version || "1.0"}』
+  웃=➪  𝙍𝙤𝙡𝙚: 『${roleText}』
+  웃=➪  𝙏𝙞𝙢𝙚 𝙥𝙚𝙧 𝙘𝙤𝙢𝙢𝙖𝙣𝙙: 『${configCommand.countDown || 1}s』
+  웃=➪   𝘼𝙪𝙩𝙝𝙤𝙧: 『${author}』
+  웃=➪  𝙐𝙨𝙖𝙜𝙚
+  웃=➪ 『${usage}』
+  웃=➪  𝙉𝙤𝙩𝙚𝙨
+  웃=➪   𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 <𝙓𝙓𝙓𝙓𝙓> 𝙘𝙖𝙣 𝙗𝙚 𝙘𝙝𝙖𝙣𝙜𝙚𝙙
+  웃=➪  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 [𝙖|𝙗|𝙘] 𝙞𝙨 𝙖 𝙤𝙧 𝙗 𝙤𝙧 𝙘 \n━━━━━━━━━━━━━━━━\n 🏁 𝙚𝙙𝙞𝙩𝙚 𝙗𝙮 : ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
   `;
 
         await message.reply(response);
