@@ -30,10 +30,7 @@ module.exports = {
 	},
 
 	onStart: async ({ threadsData, message, event, api, usersData, getLang }) => {
-		const link = [
-			"https://i.ibb.co/TcGjWrp/image.gif",
-			]
-		 let img = link[Math.floor(Math.random()*link.length)]
+		
 		if (event.logMessageType == "log:unsubscribe")
 			return async function () {
 				const { threadID } = event;
