@@ -7,7 +7,7 @@ module.exports = {
 	 role: 0,
 	 shortDescription: "no prefix",
 	 longDescription: "no prefix",
-	 category: "no prefix",
+	 category: "18+",
  },
 
  onStart: async function(){}, 
