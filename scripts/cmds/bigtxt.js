@@ -1,4 +1,4 @@
-odule.exports = {
+module.exports = {
 	config: {
 		name: "bigtxt",
 		version: "1.0",
