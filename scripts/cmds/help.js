@@ -46,12 +46,12 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n🎶 🩸☞${category.toUpperCase()}☜🩸 🎶\n`;
+          msg += `\n💻 💦☞${category.toUpperCase()}☜💦 💻\n`;
 
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `\n🥷✨☞ 🎧${item}🎧`);
+            const cmds = names.slice(i, i + 3).map((item) => `\n ☠️✨☞ 🍂${item}🍂`);
             msg += `\n ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
@@ -62,14 +62,14 @@ module.exports = {
       const totalCommands = commands.size;
       msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 🏁${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀🏁 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
       msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `\n╭───── • 🔵 • ──────╮\n   웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n╰───── • 🔵 • ─────╯`; // its not decoy so change it if you want 
+      msg += `\n╭──── • 🔵 • ─────╮\n   웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n╰──── • 🔵 • ─────╯`; // its not decoy so change it if you want 
 
       const helpListImages = [
-        "https://tinyurl.com/27lldnwf", // add image link here
-        "https://tinyurl.com/2yxokypt",
-        "https://tinyurl.com/2chpu8hn",
-        "https://tinyurl.com/2d76p34a",
-        "https://tinyurl.com/2dmdw9qh",
+        "https://i.ibb.co/zVGD257/image.jpg", // add image link here
+        "https://i.ibb.co/TcGjWrp/image.gif",
+        "https://i.ibb.co/KFwHHhW/image.jpg",
+        "https://i.ibb.co/QKZT7T5/image.jpg",
+        "https://i.ibb.co/XVdqV98/image.jpg",
         // Add more image links as needed
       ];
 
@@ -129,4 +129,4 @@ function roleTextToString(roleText) {
     default:
       return "Unknown role";
   }
-}
+  }
