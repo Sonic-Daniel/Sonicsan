@@ -1,5 +1,5 @@
 <img src="https://i.ibb.co/SKzjm9M/image.jpg" alt="banner">
-<h1 align="center"><img src="https://i.ibb.co/9YfCBpV/image.jpg" width="50px"> Sonic-Bot Messenger </h1>
+<h1 align="center"><img src="http://g-v1.onrender.com/gOkDwvKGg.gif" width="50px"> Sonic-Bot Messenger </h1>
 
 <img src="https://i.ibb.co/kMdfhwN/image.jpg" alt=banner">
 
