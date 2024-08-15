@@ -6,7 +6,7 @@ module.exports = {
 		author: 'Samir Œ',
 		shortDescription: 'Perform a Google search.',
 		longDescription: 'Performs a Google search and provides the top results.',
-		category: 'Utility',
+		category: 'ai',
 		guide: {
 			en: '{pn} [search query]',
 		},
@@ -33,7 +33,7 @@ async function performGoogleSearch(text) {
 	try {
 		const googleit = require('google-it');
 		const googleSearch = await googleit({ query: text });
-		let resText = `⚡️ Google Search Results ⚡️\n\n🔍 Search Term: ${text}\n\n`;
+		let resText = `✎﹏﹏𝐆𝐎𝐎𝐆𝐋𝐄 𝐒𝐇𝐈𝐒𝐔𝐈\n━━━━━━━━━━━━━━━━\n🔍 Search Term: ${text}\n\n`;
 
 		for (let num = 0; num < Math.min(5, googleSearch.length); num++) {
 			resText += `📍 Result ${num + 1}:\n\n📚 Title: ${
