@@ -42,18 +42,18 @@ Math.floor(uptime / 86400);
 
       const timeStart = Date.now();
       await api.sendMessage({
-        body: "🕘🎶𝐃𝐔𝐑𝐄𝐄 𝐃𝐔 𝐂𝐎𝐌𝐁𝐀𝐓🎶🕘",
+        body: "🕘🎶𝙏𝙀𝙈𝙋𝙎 𝘿'𝘼𝘾𝙏𝙄𝙑𝙄𝙏𝙀🎶🕘",
       }, event.threadID);
 
       const ping = Date.now() - timeStart;
 
-      let pingStatus = "𝐒𝐀𝐔𝐕𝐄𝐑 𝐊𝐎𝐍𝐎𝐇𝐀 !🎧🎶";
+      let pingStatus = "𝐷𝐸𝑇𝑅𝑈𝐼𝑅𝐸 𝐷'𝐴𝑈𝑇𝑅𝐸𝑆 𝐵𝑂𝑇𝑆 !👷🎧🎶";
       if (ping < 400) {
-        pingStatus = "𝐏𝐑𝐎𝐓𝐄𝐆𝐄𝐑 𝐊𝐎𝐍𝐎𝐇𝐀 !🎧🎵";
+        pingStatus = "𝑆𝑈𝑆𝑃𝐸𝑁𝐷𝑅𝐸 𝐷𝐸𝑆 𝐵𝑂𝑇𝑆 𝐸𝑁 𝐶𝑂𝑁𝐶𝑈𝑅𝑅𝐸𝑁𝐶𝐸 !🎧🎵";
       }
 
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
-      const imgURL= "https://tinyurl.com/2a9rszbt";
+      const imgURL= "https://i.ibb.co/By078j8/image.gif";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
         body: `♣♦𝙐𝘾𝙃𝙄𝙒𝘼🎧𝘾𝙇𝘼𝙉♦♣\n━━━━━━━━━━━━━━━━
 🎯 | 𝐒𝐇𝐈𝐒𝐔𝐈 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\n━━━━━━━━━━━━━━━━\n 🔵${uptimeString}🔵\n━━━━━━━━━━━━━━━━
@@ -67,4 +67,4 @@ Math.floor(uptime / 86400);
       api.sendMessage("An error occurred while retrieving data.", event.threadID);
     }
   }
-}
+  }
