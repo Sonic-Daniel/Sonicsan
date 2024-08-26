@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "━━━━━━━━━━━━━━━━\n╔╦══• •✠•☘•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂ʚʆɞ𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•☘•✠ • •══╩╝"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "━━━━━━━━━━━━━━━━\n╔╦══• •✠•🤍•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂ʚʆɞ𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•🤍•✠ • •══╩╝"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
   config: {
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔╦══• •✠•☘•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂 ʚʆɞ 𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•☘•✠ • •══╩╝\n━━━━━━━━━━━━━━━━`; // replace with your name 
+      msg += `╔╦══• •✠•🤍•✠ • •══╦╗\n ʬʆʬ𝐒𝐎𝐍𝐈𝐂 ʚʆɞ 𝐒𝐇𝐈𝐒𝐔𝐈ʬɸʬ\n╚╩══• •✠•🤍•✠ • •══╩╝\n━━━━━━━━━━━━━━━━`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -46,12 +46,12 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n💻 💦☞${category.toUpperCase()}☜💦 💻\n`;
+          msg += `\n 🩵✨☞${category.toUpperCase()}☜✨🩵\n`;
 
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `\n ☠️✨☞ 🍂${item}🍂`);
+            const cmds = names.slice(i, i + 3).map((item) => `\n 🩺✰➣ 🖇️${item}🖇️`);
             msg += `\n ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
@@ -60,9 +60,9 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 🏁${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀🏁 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
-      msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `\n╭──── • 🔵 • ─────╮\n   웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n╰──── • 🔵 • ─────╯`; // its not decoy so change it if you want 
+      msg += `\n𝐀𝐜𝐭𝐮𝐞𝐥𝐥𝐞𝐦𝐞𝐧𝐭 𝐥𝐞 𝐛𝐨𝐭 𝐝𝐢𝐬𝐩𝐨𝐬𝐞 𝐝𝐞 🏁${totalCommands}🏁𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞𝐬 !\n`;
+      msg += `𝐒𝐚𝐢𝐬𝐢𝐬 ${prefix}𝐡𝐞𝐥𝐩 𝐬𝐮𝐢𝐯𝐢𝐯𝐝𝐮 𝐧𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐩𝐨𝐮𝐫 𝐜𝐨𝐧𝐧𝐚𝐢𝐭𝐫𝐞 𝐩𝐥𝐮𝐬 𝐝𝐞 𝐝𝐞𝐭𝐚𝐢𝐥𝐬 𝐬𝐮𝐫 𝐥𝐚 𝐜𝐦𝐝 !\n━━━━━━━━━━━━━━━`;
+      msg += `\n╭──── • 🩶 • ─────╮\n   웃➣『𝐒𝐇𝐈𝐒𝐔𝐈』ツ\n╰──── • 🩶 • ─────╯`; // its not decoy so change it if you want 
 
       const helpListImages = [
         "https://i.ibb.co/zVGD257/image.jpg", // add image link here
@@ -95,7 +95,7 @@ module.exports = {
         const guideBody = configCommand.guide?.en || "No guide available.";
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = `❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
+        const response = `ミ★𝐒𝐎𝐍𝐈𝐂✄𝐄𝐗𝐄 3.0★彡
   웃=➪  『${configCommand.name}』
   웃=➪ 𝙄𝙉𝙁𝙊
   웃=➪  𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: 『${longDescription}』
@@ -109,7 +109,7 @@ module.exports = {
   웃=➪ 『${usage}』
   웃=➪  𝙉𝙤𝙩𝙚𝙨
   웃=➪   𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 <𝙓𝙓𝙓𝙓𝙓> 𝙘𝙖𝙣 𝙗𝙚 𝙘𝙝𝙖𝙣𝙜𝙚𝙙
-  웃=➪  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 [𝙖|𝙗|𝙘] 𝙞𝙨 𝙖 𝙤𝙧 𝙗 𝙤𝙧 𝙘 \n━━━━━━━━━━━━━━━━\n 🏁 𝙚𝙙𝙞𝙩𝙚 𝙗𝙮 : ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
+  웃=➪  𝙏𝙝𝙚 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙞𝙣𝙨𝙞𝙙𝙚 [𝙖|𝙗|𝙘] 𝙞𝙨 𝙖 𝙤𝙧 𝙗 𝙤𝙧 𝙘 \n━━━━━━━━━━━━━━━━\n 🏁| 𝙚𝙙𝙞𝙩 𝙗𝙮 : ミ★𝐒𝐎𝐍𝐈𝐂✄𝐄𝐗𝐄 3.0★彡
   `;
 
         await message.reply(response);
