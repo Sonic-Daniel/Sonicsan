@@ -15,7 +15,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1759470152.445572,
+    "expirationDate": 1759501718.823591,
     "hostOnly": false,
     "httpOnly": true,
     "name": "datr",
@@ -29,7 +29,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1756446153,
+    "expirationDate": 1756477715,
     "hostOnly": false,
     "httpOnly": false,
     "name": "fbl_st",
@@ -38,22 +38,8 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "100739124%3BT%3A28748502",
+    "value": "100738899%3BT%3A28749028",
     "id": 3
-},
-{
-    "domain": ".facebook.com",
-    "expirationDate": 1732683296.272618,
-    "hostOnly": false,
-    "httpOnly": true,
-    "name": "fr",
-    "path": "/",
-    "sameSite": "no_restriction",
-    "secure": true,
-    "session": false,
-    "storeId": "0",
-    "value": "0YxcvKk35kfzOmmF5.AWU0CKcjb45sZge7C7OQCt5gyks.BmwoN-..AAA.0.0.Bmz_8d.AWUAJ0B1OoU",
-    "id": 4
 },
 {
     "domain": ".facebook.com",
@@ -67,6 +53,20 @@
     "session": false,
     "storeId": "0",
     "value": "fr_FR",
+    "id": 4
+},
+{
+    "domain": ".facebook.com",
+    "expirationDate": 1759501712.709203,
+    "hostOnly": false,
+    "httpOnly": true,
+    "name": "oo",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": "0",
+    "value": "v1%7C3%3A1724941713",
     "id": 5
 },
 {
@@ -113,7 +113,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1730094153,
+    "expirationDate": 1730125715,
     "hostOnly": false,
     "httpOnly": false,
     "name": "vpd",
@@ -141,7 +141,7 @@
 },
 {
     "domain": ".facebook.com",
-    "expirationDate": 1732686152,
+    "expirationDate": 1732717715,
     "hostOnly": false,
     "httpOnly": false,
     "name": "wl_cbv",
@@ -150,7 +150,7 @@
     "secure": true,
     "session": false,
     "storeId": "0",
-    "value": "v2%3Bclient_version%3A2605%3Btimestamp%3A1724910149",
+    "value": "v2%3Bclient_version%3A2605%3Btimestamp%3A1724941713",
     "id": 11
 },
 {
