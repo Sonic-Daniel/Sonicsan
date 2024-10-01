@@ -1,22 +1,41 @@
-module.exports = {
- config: {
-	 name: "prefix",
-	 version: "1.0",
-	 author: "Tokodori_Frtiz",//remodified by cliff
-	 countDown: 5,
-	 role: 0,
-	 shortDescription: "no prefix",
-	 longDescription: "no prefix",
-	 category: "system",
- },
+const fs = require('fs');
 
- onStart: async function(){}, 
- onChat: async function({ event, message, getLang }) {
- if (event.body && event.body.toLowerCase() === "prefix") {
- return message.reply({
- body: `🎯𝐏𝐑𝐄𝐅𝐈𝐗👻𝐒𝐇𝐈𝐒𝐔𝐈🎯:↠#↞\n━━━━━━━━━━━━━━━━\n🖤𝐔𝐂𝐇𝐈𝐖𝐀👽𝐒𝐘𝐒𝐓𝐄𝐌🖤:⇨#⇦\n━━━━━━━━━━━━━━━━\n🏁☘𝑀𝑌 𝐶𝑅𝐸𝐴𝑇𝑂𝑅☘🏁\n━━━━━━━━━━━━━━━━\n🥷ʬɸʬ Sønïč❤‍🔥Shïsûį ʬɸʬ🥷\n━━━━━━━━━━━━━━━━\n👷✨𝗧𝗮𝗽𝗲 #𝗵𝗲𝗹𝗽 𝗽𝗼𝘂𝗿 𝗮𝘃𝗼𝗶𝗿 𝗹𝗮 𝗹𝗶𝘀𝘁𝗲 𝗱𝗲 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀✨👷`,
- attachment: await global.utils.getStreamFromURL("https://i.ibb.co/TcGjWrp/image.gif")
- });
- }
- }
-}
+module.exports = {
+  config: {
+    name: "prefix",
+    version: "1.0",
+    author: "ミ★𝐒𝐎𝐍𝐈𝐂✄𝐄𝐗𝐄 3.0★彡", // this cmd will expire if you change this credits (NEW VERSION)
+    countDown: 5,
+    role: 0,
+    shortDescription: "",
+    longDescription: "",
+    category: "system",
+  },
+ 
+  onStart: async function() {},
+ 
+  onChat: async function({ event, message, getLang, api }) {
+   const link = [
+"https://i.ibb.co/ZhbH43w/image.gif",
+]
+  let img =
+link[Math.floor(Math.random()*link.length)]
+    if (event.body) {
+      const word = event.body.toLowerCase();
+      switch (word) {
+        case "prefix":
+          const replies = [
+            "╭━──━─≪✠≫─━──━╮\n🤍𝑃𝑅𝐸𝐹𝐼𝑋☣𝑆𝐻𝐼𝑆𝑈𝐼🤍\n            🩺✨#✨🩺\n╰━──━─≪✠≫─━──━╯\n════•『🎗』•════\n🍂✨𝑀𝑌 𝐶𝑅𝐸𝐴𝑇𝑂𝑅𝑆✨🍂\n════•『🎗』•════\n╭━──━─≪✠≫─━──━╮\nミ★𝐒𝐎𝐍𝐈𝐂✄𝐄𝐗𝐄 3.0★彡\nミ★𝑰𝒕𝒂𝒄𝒉𝒊✄𝑫𝒆𝒙𝒕𝒆𝒖𝒓★彡\n╰━──━─≪✠≫─━──━╯",
+          ];
+          api.setMessageReaction("🥀", event.messageID, event.messageID, api); 
+          const randomIndex = Math.floor(Math.random() * replies.length);
+          message.reply({
+            body: replies[randomIndex],
+attachment: await global.utils.getStreamFromURL(img)})
+          break;
+        default:
+          return; 
+      }
+    }
+  },
+};
