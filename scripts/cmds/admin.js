@@ -69,7 +69,7 @@ module.exports = {
 					const getNames = await Promise.all(uids.map(uid => usersData.getName(uid).then(name => ({ uid, name }))));
 					writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
 					return message.reply(
-						(notAdminIds.length > 0 ? getLang("added", notAdminIds.length, getNames.map(({ uid, name }) => `웃➣『${name}』 ⇨${uid}⇦ ヅ`).join("\n")) : "")
+						(notAdminIds.length > 0 ? getLang("added", notAdminIds.length, getNames.map(({ uid, name }) => `웃➣『${name}』 ✰${uid}✰ ヅ`).join("\n")) : "")
 						+ (adminIds.length > 0 ? getLang("alreadyAdmin", adminIds.length, adminIds.map(uid => ` ${uid}`).join("\n")) : "")
 					);
 				}
@@ -98,7 +98,7 @@ module.exports = {
 					writeFileSync(global.client.dirConfig, JSON.stringify(config, null, 2));
 					return message.reply(
 						(adminIds.length > 0 ? getLang("removed", adminIds.length, getNames.map(({ uid, name }) => `웃➣ 〘${name}〙『${uid}』ツ`).join("\n")) : "")
-						+ (notAdminIds.length > 0 ? getLang("notAdmin", notAdminIds.length, notAdminIds.map(uid => `• ${uid}`).join("\n")) : "")
+						+ (notAdminIds.length > 0 ? getLang("notAdmin", notAdminIds.length, notAdminIds.map(uid => `~ ${uid}`).join("\n")) : "")
 					);
 				}
 				else
@@ -107,7 +107,7 @@ module.exports = {
 			case "list":
 			case "-l": {
 				const getNames = await Promise.all(config.adminBot.map(uid => usersData.getName(uid).then(name => ({ uid, name }))));
-				return message.reply(getLang("listAdmin", getNames.map(({ uid, name }) => `• ${name} (${uid})`).join("\n")));
+				return message.reply(getLang("listAdmin", getNames.map(({ uid, name }) => `웃 ${name} 『${uid}』`).join("\n")));
 			}
 			default:
 				return message.SyntaxError();
